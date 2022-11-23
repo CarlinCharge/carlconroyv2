@@ -11,16 +11,14 @@ export default function Home() {
       </Head>
 
       <main>
-        <Container bg="black" maxWidth="md">
+        <Container maxWidth="md">
           <Box display="flex">
-            <Button bg="green" color="black">
-              Hello
-            </Button>
+            <Button>Hello</Button>
             <Box>
               <Button> Hello</Button>
             </Box>
 
-            <Button> Hello</Button>
+            <Button variant="outline"> Hello</Button>
           </Box>
         </Container>
       </main>
