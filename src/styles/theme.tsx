@@ -5,13 +5,15 @@ export const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
-        background: "black",
+        background: "white",
+        color: "white",
       },
     },
   },
   colors: {
     green: "#7CEA9C",
     black: "#181818",
+    white: "EFEFEF",
   },
   components: {
     Button,
