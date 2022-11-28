@@ -18,7 +18,7 @@ export default function Home() {
               <Button> Hello</Button>
             </Box>
 
-            <Button variant="outline"> Hello</Button>
+            <Button> Hello</Button>
           </Box>
         </Container>
       </main>
