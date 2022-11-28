@@ -10,6 +10,9 @@ export const theme = extendTheme({
       },
     },
   },
+  fonts: {
+body: "Montserrat"
+  },
   colors: {
     green: "#7CEA9C",
     black: "#181818",
