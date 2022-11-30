@@ -1,5 +1,6 @@
-import { Button, Container, Box } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import Head from "next/head";
+import Nav from "../components/Nav/Nav";
 
 export default function Home() {
   return (
@@ -12,14 +13,7 @@ export default function Home() {
 
       <main>
         <Container maxWidth="md">
-          <Box display="flex">
-            <Button>Hello</Button>
-            <Box>
-              <Button> Hello</Button>
-            </Box>
-
-            <Button> Hello</Button>
-          </Box>
+          <Nav />
         </Container>
       </main>
     </div>

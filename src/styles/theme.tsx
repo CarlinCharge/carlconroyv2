@@ -1,5 +1,6 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./Button";
+import { Nav } from "./Nav";
 
 export const theme = extendTheme({
   styles: {
@@ -11,7 +12,7 @@ export const theme = extendTheme({
     },
   },
   fonts: {
-body: "Montserrat"
+    body: "Montserrat",
   },
   colors: {
     green: "#7CEA9C",
@@ -20,5 +21,6 @@ body: "Montserrat"
   },
   components: {
     Button,
+    Nav,
   },
 });
