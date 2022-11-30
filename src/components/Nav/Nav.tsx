@@ -21,11 +21,3 @@ const Nav = () => {
 };
 
 export default Nav;
-
-// MenuItems.map((items)) => {
-//     return(
-//     <Link as={NextLink} href={items}>
-//         Home
-//       </Link>
-//     )
-// }
