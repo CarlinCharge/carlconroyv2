@@ -1,17 +1,21 @@
 import NextLink from "next/link";
-import { Link, Container, Spacer } from "@chakra-ui/react";
+import { Link, Flex, useStyleConfig, Container } from "@chakra-ui/react";
 import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
+  const styles = useStyleConfig("Nav");
+  console.log(styles);
   return (
     <Container>
-      <Link as={NextLink} href="/">
-        Home
-      </Link>
+      <Flex __css={styles}>
+        <Link as={NextLink} href="/">
+          Home
+        </Link>
 
-      <Link as={NextLink} href="/projects">
-        Projects
-      </Link>
+        <Link as={NextLink} href="/projects">
+          Projects
+        </Link>
+      </Flex>
     </Container>
   );
 };
