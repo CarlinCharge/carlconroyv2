@@ -1,6 +1,6 @@
-import { Container } from "@chakra-ui/react";
+import { Container, Heading } from "@chakra-ui/react";
 import Head from "next/head";
-import Nav from "../components/Nav/Nav";
+import { Layout } from "../components/Layout/Layout";
 
 export default function Home() {
   return (
@@ -12,9 +12,9 @@ export default function Home() {
       </Head>
 
       <main>
-        <Container maxWidth="md">
-          <Nav />
-        </Container>
+        <Layout>
+          <Heading>Hello Bro</Heading>
+        </Layout>
       </main>
     </div>
   );

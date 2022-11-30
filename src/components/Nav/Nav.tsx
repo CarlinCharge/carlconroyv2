@@ -8,24 +8,16 @@ const Nav = () => {
   return (
     <Container>
       <Flex __css={styles}>
-        <Link as={NextLink} href="/">
-          Home
-        </Link>
-
-        <Link as={NextLink} href="/projects">
-          Projects
-        </Link>
+        {MenuItems.map((item) => {
+          return (
+            <Link as={NextLink} href={item.href} key={item.text} mr="10px">
+              {item.text}
+            </Link>
+          );
+        })}
       </Flex>
     </Container>
   );
 };
 
 export default Nav;
-
-// MenuItems.map((items)) => {
-//     return(
-//     <Link as={NextLink} href={items}>
-//         Home
-//       </Link>
-//     )
-// }
