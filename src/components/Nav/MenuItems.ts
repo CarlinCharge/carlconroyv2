@@ -1,7 +1,12 @@
+interface MenuItem {
+  text: string;
+  href: string;
+}
+
 export const MenuItems = [
   {
     text: "Home",
-    href: "/home",
+    href: "/",
   },
   { text: "Projects", href: "/projects" },
   { text: "About", href: "/about" },

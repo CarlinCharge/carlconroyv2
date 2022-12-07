@@ -1,11 +1,12 @@
 import { Container, Box } from "@chakra-ui/react";
+import { Layout } from "../components/Layout/Layout";
 
-const AboutPage = ({}) => {
+const About = () => {
   return (
     <Container>
-      <h1>About</h1>
+      <Layout>About</Layout>
     </Container>
   );
 };
 
-export default AboutPage;
+export default About;

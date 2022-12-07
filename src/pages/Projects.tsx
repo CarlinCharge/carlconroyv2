@@ -1,9 +1,10 @@
 import { Container, Box } from "@chakra-ui/react";
+import { Layout } from "../components/Layout/Layout";
 
 const Projects = ({}) => {
   return (
     <Container>
-      <h1> Projects</h1>
+      <Layout>Projects</Layout>
     </Container>
   );
 };

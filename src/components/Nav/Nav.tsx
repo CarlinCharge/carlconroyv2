@@ -4,7 +4,6 @@ import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
   const styles = useStyleConfig("Nav");
-  console.log(styles);
   return (
     <Container>
       <Flex __css={styles}>
