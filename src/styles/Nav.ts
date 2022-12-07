@@ -4,13 +4,14 @@ export const Nav = {
   },
   baseStyle: {
     flexDirection: "row",
-    color: "red",
-    background: "green",
+    color: "white",
+    background: "black",
   },
   variants: {
     primary: {
-      background: "green",
-      color: "red",
+      background: "black",
+      color: "white",
+      justify: "right",
     },
   },
 };

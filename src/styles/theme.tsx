@@ -6,7 +6,7 @@ export const theme = extendTheme({
   styles: {
     global: {
       "html, body": {
-        background: "white",
+        background: "black",
         color: "white",
       },
     },
@@ -17,7 +17,7 @@ export const theme = extendTheme({
   colors: {
     green: "#7CEA9C",
     black: "#181818",
-    white: "EFEFEF",
+    white: "#EFEFEF",
   },
   components: {
     Button,
