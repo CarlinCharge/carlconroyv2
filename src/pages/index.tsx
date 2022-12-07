@@ -1,6 +1,7 @@
 import { Container, Heading } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
+import { Image } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -11,14 +12,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Container>
-          <Layout>
-            <Heading>
-              Carl Conroy is a visual storyteller, thoughtful UX designer and
-              software developer
-            </Heading>
-          </Layout>
-        </Container>
+        <Layout>
+          <Heading my="20">
+            Carl Conroy is a visual storyteller, thoughtful UX designer and
+            software developer
+          </Heading>
+          <Image src="carl.jpg" alt="caawl" borderRadius="20px" />
+        </Layout>
       </main>
     </div>
   );

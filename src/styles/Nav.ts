@@ -3,7 +3,6 @@ export const Nav = {
     variant: "primary",
   },
   baseStyle: {
-    flexDirection: "row",
     color: "white",
     background: "black",
   },
@@ -11,7 +10,6 @@ export const Nav = {
     primary: {
       background: "black",
       color: "white",
-      justify: "right",
     },
   },
 };
