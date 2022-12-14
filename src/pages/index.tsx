@@ -2,6 +2,7 @@ import { Container, Heading } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
 import { Image } from "@chakra-ui/react";
+import About from "./About";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
             Carl Conroy is a visual storyteller, thoughtful UX designer and
             software developer
           </Heading>
-          <Image src="carl.jpg" alt="caawl" borderRadius="20px" />
+          <About/>
         </Layout>
       </main>
     </div>
