@@ -7,7 +7,7 @@ interface Props {
 }
 export const Layout: React.FC<Props> = ({ children, imgURL }) => {
   return (
-    <Container maxWidth="4xl">
+    <Container maxWidth="6xl">
       <Nav />
       {children}
     </Container>
