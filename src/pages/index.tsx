@@ -2,7 +2,7 @@ import { Container, Heading } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
 import { Image } from "@chakra-ui/react";
-import About from "./About";
+import About from "../components/About";
 
 export default function Home() {
   return (
