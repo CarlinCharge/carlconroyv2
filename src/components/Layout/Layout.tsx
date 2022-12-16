@@ -3,9 +3,8 @@ import Nav from "../Nav/Nav";
 
 interface Props {
   children: React.ReactNode;
-  imgURL?: string;
 }
-export const Layout: React.FC<Props> = ({ children, imgURL }) => {
+export const Layout: React.FC<Props> = ({ children }) => {
   return (
     <Container maxWidth="6xl">
       <Nav />
