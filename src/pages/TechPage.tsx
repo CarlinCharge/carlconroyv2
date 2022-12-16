@@ -1,7 +1,7 @@
-import { Image } from "@chakra-ui/react";
+import Tech from "../components/Tech/Tech";
 
 const TechPage = () => {
-  return <Image src="/carl.jpg" alt="CaAWL" width="30rem"></Image>;
+  return <Tech />;
 };
 
 export default TechPage;
