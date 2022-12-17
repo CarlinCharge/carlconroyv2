@@ -1,11 +1,15 @@
-import { Container, Box } from "@chakra-ui/react";
+import { Heading, Box, Text, Spacer } from "@chakra-ui/react";
 import { Layout } from "../components/Layout/Layout";
 
 const Projects = ({}) => {
   return (
-    <Container>
-      <Layout>Projects</Layout>
-    </Container>
+    <Layout>
+      <Heading>Projects</Heading>
+      <Spacer />
+      <Box>
+        <Text>Client Film Review Platform</Text>
+      </Box>
+    </Layout>
   );
 };
 
