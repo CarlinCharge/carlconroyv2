@@ -13,9 +13,10 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Flex direction="column"></Flex>
-          <Flex justify="center" width="50vw">
-            <Center w="50%" h="200px" position="absolute">
+          <Flex direction="row"></Flex>
+
+          <Flex justify="center">
+            <Center minH="100vh" width="100%">
               <Heading>The Future Location of My Digital Garden</Heading>
             </Center>
           </Flex>
