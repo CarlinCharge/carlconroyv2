@@ -19,7 +19,6 @@ export default function Home() {
               software developer
             </Heading>
           </Flex>
-          <About />
         </Layout>
       </main>
     </div>
