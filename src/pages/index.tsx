@@ -1,4 +1,4 @@
-import { Heading, Flex } from "@chakra-ui/react";
+import { Heading, Flex, Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
 import About from "../components/About";
@@ -13,11 +13,11 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Flex justify="center">
-            <Heading my="20">
-              Carl Conroy is a visual storyteller, thoughtful UX designer and
-              software developer
-            </Heading>
+          <Flex direction="column"></Flex>
+          <Flex justify="center" width="50vw">
+            <Center w="50%" h="200px" position="absolute">
+              <Heading>The Future Location of My Digital Garden</Heading>
+            </Center>
           </Flex>
         </Layout>
       </main>
