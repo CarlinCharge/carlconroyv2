@@ -6,8 +6,11 @@ import {
   List,
   ListItem,
   Spacer,
+  Link,
 } from "@chakra-ui/react";
 import { Layout } from "../Layout/Layout";
+import NextLink from "next/link";
+import { TechItems } from "./TechItems";
 
 const Tech = () => {
   return (
@@ -20,9 +23,15 @@ const Tech = () => {
           <Heading size="md">What I Use To Work</Heading>
           <Spacer />
           <List mt="5">
-            <ListItem>Macbook Pro 2016 </ListItem>
-            <ListItem>VS Code</ListItem>
-            <ListItem>MX Master 3S</ListItem>
+            {TechItems.map((item) => {
+              return (
+                <ListItem>
+                  <Link as={NextLink} href={item.href} key={item.text}>
+                    {item.text}
+                  </Link>
+                </ListItem>
+              );
+            })}
           </List>
         </Box>
         <Box mt="10">
