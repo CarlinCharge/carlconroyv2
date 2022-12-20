@@ -1,11 +1,9 @@
-import { Container, ListItem, UnorderedList } from "@chakra-ui/react";
+import { Container, ListItem, UnorderedList, Text } from "@chakra-ui/react";
 
 const Tooling = () => {
   return (
     <Container>
-      <UnorderedList>
-        <ListItem>React</ListItem>
-      </UnorderedList>
+      <Text>Who am I?</Text>
     </Container>
   );
 };

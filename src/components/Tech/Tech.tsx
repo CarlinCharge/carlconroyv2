@@ -26,7 +26,7 @@ const Tech = () => {
             {TechItems.map((item) => {
               return (
                 <ListItem>
-                  <Link as={NextLink} href={item.href} key={item.text}>
+                  <Link href={item.href} key={item.text}>
                     {item.text}
                   </Link>
                 </ListItem>

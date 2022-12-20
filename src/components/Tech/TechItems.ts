@@ -6,9 +6,10 @@ interface TechItem {
 export const TechItems: TechItem[] = [
   {
     text: "VS Code",
-    href: "/",
+    href: "#",
   },
   { text: "Macbook Pro 2016", href: "#" },
-  { text: "MX Master 3S", href: "/about" }
+  { text: "MX Master 3S", href: "#"}
+//   shorturl.at/eyIT6
   
 ];

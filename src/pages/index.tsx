@@ -1,7 +1,7 @@
 import { Heading, Flex, Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
-import About from "../components/About";
+import About from "../components/About/About";
 
 export default function Home() {
   return (
