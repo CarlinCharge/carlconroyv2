@@ -5,6 +5,7 @@ interface SocialItem {
   icon: IconType;
   alt: string;
   href: string;
+  isExternal?: boolean;
 }
 
 export const SocialItems: SocialItem[] = [
@@ -12,6 +13,7 @@ export const SocialItems: SocialItem[] = [
     icon: FaGithub,
     href: "https://github.com/CarlinCharge",
     alt: "Github Profile",
+    isExternal: true,
   },
   {
     icon: FaInstagram,

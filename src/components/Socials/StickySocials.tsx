@@ -8,7 +8,7 @@ export const StickySocials = () => {
       {SocialItems.map((item) => {
         return (
           <ListItem>
-            <Link>
+            <Link href={item.href}>
               <Icon as={item.icon} w={size} h={size} key={item.href} />
             </Link>
           </ListItem>
