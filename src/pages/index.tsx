@@ -1,7 +1,6 @@
 import { Heading, Flex, Center } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
-import About from "../components/About/About";
 
 export default function Home() {
   return (
@@ -13,12 +12,8 @@ export default function Home() {
       </Head>
       <main>
         <Layout>
-          <Flex direction="row"></Flex>
-
-          <Flex justify="center">
-            <Center minH="100vh" width="100%">
-              <Heading>The Future Location of My Digital Garden</Heading>
-            </Center>
+          <Flex minH="100vh" align="center" justify="center">
+            <Heading>The Future Location of My Digital Greenhouse 🌱</Heading>
           </Flex>
         </Layout>
       </main>

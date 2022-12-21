@@ -5,13 +5,11 @@ import Tooling from "./Tooling";
 const About = () => {
   return (
     <Container maxW="6xl" align="center">
-      <Flex>
-        <Center>
-          <Heading width="50%">
-            Carl Conroy is a visual storyteller, thoughtful UX designer, and
-            software developer.
-          </Heading>
-        </Center>
+      <Flex align="center" justify="center">
+        <Heading width="50%">
+          Carl Conroy is a visual storyteller, thoughtful UX designer, and
+          software developer.
+        </Heading>
       </Flex>
       <Flex gap="10" pt="10">
         <Box>
