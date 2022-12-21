@@ -9,7 +9,7 @@ export const StickySocials = () => {
         return (
           <ListItem>
             <Link>
-              <Icon as={item.icon} w={size} h={size} />
+              <Icon as={item.icon} w={size} h={size} key={item.href} />
             </Link>
           </ListItem>
         );
