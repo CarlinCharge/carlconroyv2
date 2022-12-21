@@ -1,4 +1,4 @@
-import { Heading, Flex, Center } from "@chakra-ui/react";
+import { Heading, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { Layout } from "../components/Layout/Layout";
 

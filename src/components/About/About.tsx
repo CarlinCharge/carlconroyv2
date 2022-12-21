@@ -4,9 +4,9 @@ import Tooling from "./Tooling";
 
 const About = () => {
   return (
-    <Container maxW="6xl" align="center">
+    <Container maxW="6xl">
       <Flex align="center" justify="center">
-        <Heading width="50%">
+        <Heading width="50%" textAlign="center">
           Carl Conroy is a visual storyteller, thoughtful UX designer, and
           software developer.
         </Heading>
