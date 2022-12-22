@@ -1,6 +1,6 @@
 import React from "react";
-import { Container, Image, Flex, Box, Heading, Center } from "@chakra-ui/react";
-import Tooling from "./Tooling";
+import { Container, Image, Flex, Box, Heading } from "@chakra-ui/react";
+import { Bio } from "./bio";
 
 const About = () => {
   return (
@@ -14,7 +14,7 @@ const About = () => {
       <Flex gap="10" pt="10">
         <Box>
           <Heading size="md">Outside Work</Heading>
-          <Tooling />
+          <Bio />
         </Box>
         <Image src="/carl.jpg" alt="CaAWL" width="30rem"></Image>
       </Flex>

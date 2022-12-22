@@ -19,10 +19,12 @@ export const SocialItems: SocialItem[] = [
     icon: FaInstagram,
     href: "https://www.instagram.com/carlconroydesign/",
     alt: "Github Profile",
+    isExternal: true,
   },
   {
     icon: FaLinkedin,
     href: "https://www.instagram.com/carlconroydesign/",
     alt: "Github Profile",
+    isExternal: true,
   },
 ];
