@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image, Flex, Box, Heading } from "@chakra-ui/react";
-import { Bio } from "./bio";
+import { Bio } from "./Bio";
 
 const About = () => {
   return (

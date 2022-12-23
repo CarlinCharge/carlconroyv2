@@ -1,4 +1,9 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import {
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaSquarespace,
+} from "react-icons/fa";
 import { IconType } from "react-icons/lib";
 
 interface SocialItem {
@@ -25,6 +30,12 @@ export const SocialItems: SocialItem[] = [
     icon: FaLinkedin,
     href: "https://www.instagram.com/carlconroydesign/",
     alt: "Github Profile",
+    isExternal: true,
+  },
+  {
+    icon: FaSquarespace,
+    href: "https://www.carlconroydesign.com/",
+    alt: "Carl Conroy Design",
     isExternal: true,
   },
 ];
