@@ -19,7 +19,7 @@ const Tech = () => {
         <Center>
           <Heading>Every Day Tech</Heading>
         </Center>
-        <Box mt="10">
+        <Box mt="10" pl="20">
           <Heading size="md">What I Use To Work</Heading>
           <Spacer />
           <List mt="5">
@@ -39,7 +39,7 @@ const Tech = () => {
             })}
           </List>
         </Box>
-        <Box mt="10">
+        <Box mt="10" pl="20">
           <Heading size="md">What I Use To Play</Heading>
           <Spacer />
           <List mt="5">
