@@ -8,10 +8,9 @@ export const TechItems: TechItem[] = [
   {
     text: "VS Code",
     href: "https://code.visualstudio.com/",
-    isExternal: true
+    isExternal: true,
   },
-  { text: "Macbook Pro 2016", href: "#" },
-  { text: "MX Master 3S", href: "#"}
-
-  
+  { text: "M1 Macbook Pro 2022", href: "#" },
+  { text: "MX Master 3S", href: "#" },
 ];
+// add more
