@@ -1,24 +1,17 @@
 import { Icon, useMediaQuery, List, ListItem, Link } from "@chakra-ui/react";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
+
 import { SocialItems } from "./SocialItems";
 
-const size = "10";
-
+const size = 10;
 export const StickySocials = () => {
-  const [isSmallerThan850] = useMediaQuery([
-    `.socials {
-      display: none; 
-    }`,
-  ]);
   return (
     <List
       position="fixed"
       bottom="20"
       gap="6"
-      display="grid"
+      display={{ base: "none", lg: "grid" }}
       className="socials"
     >
-      {isSmallerThan850 ? "smaller than 850" : "larger than 850"}
       {SocialItems.map((item) => {
         return (
           <ListItem>
