@@ -11,4 +11,5 @@ export const MenuItems: MenuItem[] = [
   { text: "Projects", href: "/projects" },
   { text: "About", href: "/about" },
   { text: "Tech", href: "/tech-page" },
+  { text: "Resumé", href: "/resume" },
 ];

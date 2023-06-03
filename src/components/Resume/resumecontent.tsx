@@ -5,22 +5,22 @@ import {
   Text,
   Container,
   Avatar,
-  HStack,
+  VStack,
 } from "@chakra-ui/react";
 
 export const ResumeContent = () => {
   return (
     <Container>
       <Flex direction="column">
-        <HStack m="2">
-          <Heading>Carl Conroy</Heading>
-        </HStack>
-        <HStack m="2">
+        <VStack m="2">
+          <Text>Carl Conroy</Text>
+        </VStack>
+        <VStack m="2">
           <Avatar size="xl" src="/carl.jpg" />
-        </HStack>
-        <Flex>
+        </VStack>
+        <Flex justifyContent="center">
           <Box>
-            <Box maxW="350px">
+            <Box maxW="450px">
               <Text fontSize="md">
                 Skillsets: React.js, Next.js, GraphQL, PostgreSQL, Javascript,
                 Docker, Vercel, Firebase Experience

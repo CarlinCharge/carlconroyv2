@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link, Flex, useStyleConfig, Box } from "@chakra-ui/react";
+import { Link, Flex, useStyleConfig, Button } from "@chakra-ui/react";
 import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
@@ -27,17 +27,6 @@ const Nav = () => {
             </Link>
           );
         })}
-        <Box
-          as="button"
-          borderRadius="md"
-          bg="black"
-          _hover={{
-            color: "#A970FF",
-            textDecoration: "underline",
-          }}
-        >
-          Resume
-        </Box>
       </Flex>
     </Flex>
   );
