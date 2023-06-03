@@ -14,17 +14,21 @@ export const Bio = () => {
         </Text>
         <Text mb={4}>
           You can find some of my recent work in the{" "}
-          <Link href="/projects">Projects </Link> section of my portfolio
-          including the details on how I built this website from concept to
-          completed product.
+          <Link href="/projects" fontWeight="bold">
+            Projects{" "}
+          </Link>{" "}
+          section of my portfolio including the details on how I built this
+          website from concept to completed product.
         </Text>
         <Text mb={4}>
           Technical communication and design are important when it comes to
           bringing an application or website to life. I use{" "}
-          <Link href={figma}>Figma</Link> to design UI and produce mockups to
-          effectively establish unified vision. From there I can scaffold a
-          system using primarily React as a development framework in tandem with
-          the tools I see fit for the job.
+          <Link href={figma} fontWeight="bold">
+            Figma
+          </Link>{" "}
+          to design UI and produce mockups to effectively establish unified
+          vision. From there I can scaffold a system using primarily React as a
+          development framework in tandem with the tools I see fit for the job.
         </Text>
       </Box>
       <Box>
