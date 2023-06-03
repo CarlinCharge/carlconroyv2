@@ -1,12 +1,4 @@
-import {
-  Heading,
-  Flex,
-  Box,
-  Text,
-  Container,
-  Avatar,
-  VStack,
-} from "@chakra-ui/react";
+import { Flex, Box, Text, Container, Avatar, VStack } from "@chakra-ui/react";
 
 export const ResumeContent = () => {
   return (

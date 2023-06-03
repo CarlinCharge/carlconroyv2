@@ -15,10 +15,6 @@ export default function App({ Component, pageProps }: AppProps) {
           href="https://fonts.gstatic.com"
           crossOrigin="anonymous"
         />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
       </Head>
 
       <Component {...pageProps} />
