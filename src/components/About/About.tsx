@@ -16,7 +16,7 @@ const About = () => {
           <Heading size="md">Outside Work</Heading>
           <Bio />
         </Box>
-        <Image src="/carl.jpg" alt="CaAWL" width="30rem"></Image>
+        <Image src="/carl.jpg" alt="CaAWL" width="30rem" maxH="300px"></Image>
       </Flex>
     </Container>
   );
