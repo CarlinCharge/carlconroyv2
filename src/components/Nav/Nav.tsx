@@ -18,6 +18,10 @@ const Nav = () => {
               key={item.text}
               mr="10px"
               p="4"
+              _hover={{
+                color: "#A970FF",
+                textDecoration: "underline",
+              }}
             >
               {item.text}
             </Link>
