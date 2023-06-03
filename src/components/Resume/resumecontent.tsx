@@ -31,14 +31,8 @@ export const ResumeContent = () => {
               <Text fontSize="lg" fontWeight="bold">
                 Application Manager / Software Developer Crown Castle
               </Text>
-              <Text fontSize={{ base: "sm", lg: "md" }} noOfLines={3}>
-                (Oct 2016 - Present)
-              </Text>
-              <Text
-                mb={4}
-                fontSize={{ base: "sm", lg: "md" }}
-                h={{ base: 16, lg: "4.5rem" }}
-              >
+              <Text>(Oct 2016 - Present)</Text>
+              <Text mb={4}>
                 Front End Web Developer - UI Developer using React.js and Redux
                 Full Stack Developer - NSS Web Microservices Developer
                 Application Engineering Team member managing multiple internal
