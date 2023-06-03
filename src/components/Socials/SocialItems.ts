@@ -28,8 +28,8 @@ export const SocialItems: SocialItem[] = [
   },
   {
     icon: FaLinkedin,
-    href: "https://www.instagram.com/carlconroydesign/",
-    alt: "Github Profile",
+    href: "https://www.linkedin.com/in/carl-conroy/",
+    alt: "LinkedIn Profile",
     isExternal: true,
   },
   {
