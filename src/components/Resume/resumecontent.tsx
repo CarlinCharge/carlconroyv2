@@ -1,4 +1,13 @@
-import { Flex, Box, Text, Container, Avatar, VStack } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Text,
+  Container,
+  Avatar,
+  VStack,
+  List,
+  ListItem,
+} from "@chakra-ui/react";
 
 export const ResumeContent = () => {
   return (
@@ -19,23 +28,29 @@ export const ResumeContent = () => {
                 Vercel, Firebase Experience
               </Text>
             </Box>
-            <Box maxW="600px">
+            <Box maxW="1000px">
               <Text fontSize="lg" fontWeight="bold">
-                Application Manager / Software Developer Crown Castle
+                Application Manager / Software Developer Crown Castle (Oct 2016
+                - Present)
               </Text>
-              <Text>(Oct 2016 - Present)</Text>
               <Text mb={4}>
-                Front End Web Developer - UI Developer using React.js and Redux
-                Full Stack Developer - NSS Web Microservices Developer
-                Application Engineering Team member managing multiple internal
-                applications
+                <List>
+                  <ListItem>
+                    Front End Web Developer - UI Developer using React.js
+                    <ListItem>- NSS Web Microservices Developer</ListItem>
+                  </ListItem>
+                  <ListItem>
+                    - Application Engineering Team member managing multiple
+                    internal applications
+                  </ListItem>
+                </List>
               </Text>
             </Box>
             <Box>
               <Text fontSize="lg" fontWeight="bold">
-                Lead Web Developer Phoenix Pinelands Corporation
+                Lead Web Developer Phoenix Pinelands Corporation (5 months)
               </Text>
-              <Text>(5 months)</Text> Lead Front End Web Developer
+              - Lead Front End Web Developer
             </Box>
           </Box>
         </Flex>
