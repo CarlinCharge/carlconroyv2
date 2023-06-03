@@ -21,25 +21,35 @@ export const ResumeContent = () => {
         <Flex justifyContent="center">
           <Box>
             <Box maxW="450px">
-              <Text fontSize="md">
-                Skillsets: React.js, Next.js, GraphQL, PostgreSQL, Javascript,
-                Docker, Vercel, Firebase Experience
+              <Text fontWeight="bold">Skillsets:</Text>
+              <Text mb="5">
+                React.js, Next.js, GraphQL, PostgreSQL, Javascript, Docker,
+                Vercel, Firebase Experience
               </Text>
             </Box>
             <Box maxW="600px">
               <Text fontSize="lg" fontWeight="bold">
                 Application Manager / Software Developer Crown Castle
               </Text>
-              <Text fontSize="md">(Oct 2016 - Present)</Text>
-              Front End Web Developer - UI Developer using React.js and Redux
-              Full Stack Developer - NSS Web Microservices Developer Application
-              Engineering Team member managing multiple internal applications
+              <Text fontSize={{ base: "sm", lg: "md" }} noOfLines={3}>
+                (Oct 2016 - Present)
+              </Text>
+              <Text
+                mb={4}
+                fontSize={{ base: "sm", lg: "md" }}
+                h={{ base: 16, lg: "4.5rem" }}
+              >
+                Front End Web Developer - UI Developer using React.js and Redux
+                Full Stack Developer - NSS Web Microservices Developer
+                Application Engineering Team member managing multiple internal
+                applications
+              </Text>
             </Box>
             <Box>
               <Text fontSize="lg" fontWeight="bold">
                 Lead Web Developer Phoenix Pinelands Corporation
               </Text>
-              (5 months) Lead Front End Web Developer
+              <Text>(5 months)</Text> Lead Front End Web Developer
             </Box>
           </Box>
         </Flex>
