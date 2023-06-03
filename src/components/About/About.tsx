@@ -12,8 +12,10 @@ const About = () => {
         </Heading>
       </Flex>
       <Flex gap="10" pt="10" justifyContent="center">
-        <Box maxW="sm">
-          <Heading size="md">Outside Work</Heading>
+        <Box maxW="md">
+          <Heading size="md" mb={4}>
+            Outside Work
+          </Heading>
           <Bio />
         </Box>
         <Image src="/carl.jpg" alt="CaAWL" width="30rem" maxH="300px"></Image>

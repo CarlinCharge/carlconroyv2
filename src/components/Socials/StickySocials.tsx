@@ -1,4 +1,4 @@
-import { Icon, useMediaQuery, List, ListItem, Link } from "@chakra-ui/react";
+import { Icon, List, ListItem, Link } from "@chakra-ui/react";
 
 import { SocialItems } from "./SocialItems";
 
@@ -15,7 +15,12 @@ export const StickySocials = () => {
       {SocialItems.map((item) => {
         return (
           <ListItem>
-            <Link href={item.href}>
+            <Link
+              href={item.href}
+              _hover={{
+                color: "#A970FF",
+              }}
+            >
               <Icon as={item.icon} w={size} h={size} key={item.href} />
             </Link>
           </ListItem>

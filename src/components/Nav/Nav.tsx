@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link, Flex, useStyleConfig, Button } from "@chakra-ui/react";
+import { Link, Flex, useStyleConfig } from "@chakra-ui/react";
 import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
@@ -18,10 +18,6 @@ const Nav = () => {
               key={item.text}
               mr="10px"
               p="4"
-              _hover={{
-                color: "#A970FF",
-                textDecoration: "underline",
-              }}
             >
               {item.text}
             </Link>

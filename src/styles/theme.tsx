@@ -19,6 +19,7 @@ export const theme = extendTheme({
     green: "#7CEA9C",
     black: "#181818",
     white: "#EFEFEF",
+    purple: "#A970FF",
   },
   components: {
     Button,

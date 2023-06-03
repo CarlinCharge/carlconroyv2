@@ -7,7 +7,7 @@ export const Bio = () => {
     <Container>
       <Text fontWeight="bold">Who am I?</Text>
       <Box>
-        <Text mb={4}>
+        <Text mb={4} textAlign="left">
           I've been building software since 2016. When I got started I began
           with Ruby/Ruby on Rails but these days I build entire applications
           using React and a wealth of tools to manage the backend quickly.
@@ -28,7 +28,9 @@ export const Bio = () => {
         </Text>
       </Box>
       <Box>
-        <Link href={url}>Carl Conroy Design </Link>
+        <Link href={url} fontWeight="bold">
+          Carl Conroy Design{" "}
+        </Link>
         <Text>
           I have my own production company. Primarily I have been a wedding
           filmmaker but I have done a variety of commercial work as well.
