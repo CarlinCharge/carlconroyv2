@@ -1,6 +1,7 @@
 import { extendTheme } from "@chakra-ui/react";
 import { Button } from "./Button";
 import { Nav } from "./Nav";
+import { GardenPostCard } from "./GardenPostCard";
 
 export const theme = extendTheme({
   styles: {
@@ -24,5 +25,6 @@ export const theme = extendTheme({
   components: {
     Button,
     Nav,
+    GardenPostCard,
   },
 });

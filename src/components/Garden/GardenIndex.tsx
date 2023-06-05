@@ -1,4 +1,5 @@
 import { Container, Text, Heading, Flex, Box } from "@chakra-ui/react";
+import GardenPostCard from "./GardenPostCard";
 const GardenIndex = () => {
   return (
     <Container>
@@ -12,6 +13,9 @@ const GardenIndex = () => {
             article, these entries exist to enforce programming principles I
             always want to keep in my back pocket.
           </Text>
+        </Box>
+        <Box>
+          <GardenPostCard />
         </Box>
       </Flex>
     </Container>

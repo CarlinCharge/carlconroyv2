@@ -3,7 +3,6 @@ import { Link, Flex, useStyleConfig } from "@chakra-ui/react";
 import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
-  const styles = useStyleConfig("Nav");
   return (
     <Flex justifyContent="space-between" alignItems="center">
       <Link as={NextLink} href="/">

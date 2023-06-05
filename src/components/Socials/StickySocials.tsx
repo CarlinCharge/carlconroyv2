@@ -14,14 +14,14 @@ export const StickySocials = () => {
     >
       {SocialItems.map((item) => {
         return (
-          <ListItem>
+          <ListItem key={item.href}>
             <Link
               href={item.href}
               _hover={{
                 color: "#A970FF",
               }}
             >
-              <Icon as={item.icon} w={size} h={size} key={item.href} />
+              <Icon as={item.icon} w={size} h={size} />
             </Link>
           </ListItem>
         );
