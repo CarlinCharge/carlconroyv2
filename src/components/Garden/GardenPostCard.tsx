@@ -1,5 +1,4 @@
-import { Heading, Text, Card, Box } from "@chakra-ui/react";
-interface Props {}
+import { Heading, Text, Box } from "@chakra-ui/react";
 
 const GardenPostCard = () => {
   return (
