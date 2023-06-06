@@ -7,13 +7,20 @@ const GardenPostCard = () => {
       <Box maxW="md" mt={4} border="solid">
         <Heading fontSize="lg">The useState Hook Explained</Heading>
         <Text fontSize="md">An overview of useState</Text>
-        <Text>What is it used for and how do I use it?</Text>
+        <Text>What Is It Used For And How Do I Use It?</Text>
       </Box>
 
       <Box maxW="md" mt={4} border="solid">
         <Heading fontSize="lg">The useEffect Hook Explained</Heading>
         <Text fontSize="md">The Difference Between useEffect and useState</Text>
-        <Text>How do they work together?</Text>
+        <Text>How Do They Work Together?</Text>
+      </Box>
+      <Box maxW="md" mt={4} border="solid">
+        <Heading fontSize="lg">getStaticProps</Heading>
+        <Text fontSize="md">
+          What Is Server Side Rendering? How Does getStaticProps Work?{" "}
+        </Text>
+        <Text>A Short Guide On Data Fetching</Text>
       </Box>
     </>
   );
