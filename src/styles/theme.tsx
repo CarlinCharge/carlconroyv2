@@ -23,7 +23,6 @@ export const theme = extendTheme({
     purple: "#A970FF",
   },
   components: {
-    Button,
     Nav,
     GardenPostCard,
   },
