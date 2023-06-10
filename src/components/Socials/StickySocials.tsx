@@ -2,14 +2,14 @@ import { Icon, List, ListItem, Link } from "@chakra-ui/react";
 
 import { SocialItems } from "./SocialItems";
 
-const size = 10;
+const size = { base: "25px", lg: 10 };
 export const StickySocials = () => {
   return (
     <List
       position="fixed"
       bottom="20"
       gap="6"
-      display={{ base: "none", lg: "grid" }}
+      display={{ base: "grid", lg: "grid" }}
       className="socials"
     >
       {SocialItems.map((item) => {

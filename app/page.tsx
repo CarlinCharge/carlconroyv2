@@ -11,7 +11,9 @@ export default function Home() {
       </Head>
       <main>
         <Flex minH="100vh" align="center" justify="center">
-          <Heading>The Future Location of My Digital Greenhouse 🌱</Heading>
+          <Heading fontSize={{ base: "sm", lg: "26.75px" }}>
+            The Future Location of My Digital Greenhouse 🌱
+          </Heading>
         </Flex>
       </main>
     </div>
