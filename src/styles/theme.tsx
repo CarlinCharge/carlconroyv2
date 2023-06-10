@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-import { Button } from "./Button";
 import { Nav } from "./Nav";
 import { GardenPostCard } from "./GardenPostCard";
 
