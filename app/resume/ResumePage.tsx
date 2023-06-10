@@ -5,11 +5,11 @@ import {
   Container,
   Avatar,
   VStack,
-  List,
+  UnorderedList,
   ListItem,
 } from "@chakra-ui/react";
 
-export const ResumeContent = () => {
+export default function ResumePage() {
   return (
     <Container>
       <Flex direction="column">
@@ -34,27 +34,27 @@ export const ResumeContent = () => {
                 - Present)
               </Text>
               <Text mb={4}>
-                <List>
+                <UnorderedList styleType="none">
                   <ListItem>
-                    Front End Web Developer - UI Developer using React.js
+                    - Front End Web Developer - UI Developer using React.js
                     <ListItem>- NSS Web Microservices Developer</ListItem>
                   </ListItem>
                   <ListItem>
                     - Application Engineering Team member managing multiple
                     internal applications
                   </ListItem>
-                </List>
+                </UnorderedList>
               </Text>
             </Box>
             <Box>
               <Text fontSize="lg" fontWeight="bold">
                 Lead Web Developer Phoenix Pinelands Corporation (5 months)
               </Text>
-              - Lead Front End Web Developer
+              Lead Front End Web Developer
             </Box>
           </Box>
         </Flex>
       </Flex>
     </Container>
   );
-};
+}

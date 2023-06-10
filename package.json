@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@chakra-ui/next-js": "^2.1.4",
     "@chakra-ui/react": "^2.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@emotion/weak-memoize": "^0.3.1",
     "@fontsource/montserrat": "^4.5.13",
     "@types/node": "18.11.9",
     "@types/react": "18.0.25",

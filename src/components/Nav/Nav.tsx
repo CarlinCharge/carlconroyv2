@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link, Flex, useStyleConfig } from "@chakra-ui/react";
+import { Link, Flex } from "@chakra-ui/react";
 import { MenuItems } from "./MenuItems";
 
 const Nav = () => {
