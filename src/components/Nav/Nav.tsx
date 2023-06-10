@@ -6,7 +6,15 @@ const Nav = () => {
   const fontSize = "26.45px";
   return (
     <Flex justifyContent="space-between" alignItems="center">
-      <Link as={NextLink} href="/" fontSize={fontSize}>
+      <Link
+        as={NextLink}
+        href="/"
+        fontSize={fontSize}
+        _hover={{
+          color: "#A970FF",
+          textDecoration: "underline",
+        }}
+      >
         Carl Conroy
       </Link>
       <Flex>
