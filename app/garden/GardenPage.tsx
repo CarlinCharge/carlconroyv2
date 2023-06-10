@@ -1,6 +1,6 @@
 import { Container, Text, Heading, Flex, Box } from "@chakra-ui/react";
 import GardenPostCard from "./GardenPostCard";
-const GardenIndex = () => {
+export default function GardenPage() {
   return (
     <Container>
       <Flex direction="column">
@@ -20,6 +20,4 @@ const GardenIndex = () => {
       </Flex>
     </Container>
   );
-};
-
-export default GardenIndex;
+}

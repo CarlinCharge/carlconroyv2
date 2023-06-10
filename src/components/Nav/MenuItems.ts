@@ -12,5 +12,5 @@ export const MenuItems: MenuItem[] = [
   { text: "About", href: "/about" },
   { text: "Tech", href: "/tech" },
   { text: "Resumé", href: "/resume" },
-  // { text: "Garden", href: "/garden" },
+  { text: "Garden", href: "/garden" },
 ];
