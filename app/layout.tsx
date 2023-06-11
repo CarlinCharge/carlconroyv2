@@ -15,7 +15,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <ChakraProvider theme={theme}>
-          <Container maxW={{ base: "24px", md: "40px", lg: "6xl" }}>
+          <Container maxW={{ base: "5xl", md: "40px", lg: "6xl" }}>
             <Nav />
             <StickySocials />
             {children}
