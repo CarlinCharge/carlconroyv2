@@ -79,6 +79,9 @@ const Nav = () => {
           {MenuItems.map((item) => {
             return (
               <Link
+                onClick={() => {
+                  setDisplay("none");
+                }}
                 fontSize={fontSize}
                 maxW={{ base: "50%", md: "40px", lg: "6xl" }}
                 as={NextLink}
