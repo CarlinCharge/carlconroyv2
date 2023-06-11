@@ -11,7 +11,6 @@ export const StickySocials = () => {
       gap="6"
       display={{ base: "flex", lg: "grid" }}
       className="socials"
-      maxH={{ sm: "10vh" }}
     >
       {SocialItems.map((item) => {
         return (
