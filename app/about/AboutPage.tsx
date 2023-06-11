@@ -2,10 +2,11 @@ import { Container, Flex, Box, Heading, Image } from "@chakra-ui/react";
 import Bio from "./Bio";
 
 const AboutPage = () => {
+  const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
   return (
     <Container maxW="6xl">
       <Flex justify="center">
-        <Heading width="50%" textAlign="center">
+        <Heading width="50%" textAlign="center" fontSize={fontSize}>
           Carl Conroy is a visual storyteller, thoughtful UX designer, and
           software developer.
         </Heading>
@@ -17,7 +18,13 @@ const AboutPage = () => {
           </Heading>
           <Bio />
         </Box>
-        <Image src="/carl.jpg" alt="CaAWL" width="30rem" maxH="300px"></Image>
+        <Image
+          src="/carl.jpg"
+          alt="CaAWL"
+          width={{ base: "30rem" }}
+          maxH="300px"
+          display={{ base: "none" }}
+        ></Image>
       </Flex>
     </Container>
   );
