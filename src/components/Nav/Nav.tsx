@@ -23,11 +23,7 @@ const Nav = () => {
         Carl Conroy
       </Link>
 
-      <Flex
-        display="flex "
-        direction={{ base: "column", md: "column", lg: "row" }}
-        flexFlow={{ base: "column wrap" }}
-      >
+      <Flex display="flex " flexFlow="no">
         {MenuItems.map((item) => {
           return (
             <Link
