@@ -1,10 +1,11 @@
 import { Container, Text, Heading, Flex, Box } from "@chakra-ui/react";
 import GardenPostCard from "./GardenPostCard";
 export default function GardenPage() {
+  const fontSize = { base: "10px", md: "1xs", lg: "26.75px" };
   return (
-    <Container>
+    <Container maxW={{ base: "sm", md: "4xl", lg: "6xl" }}>
       <Flex direction="column">
-        <Heading>Welcome to the Garden </Heading>
+        <Heading fontSize={fontSize}>Welcome to the Garden </Heading>
         <Box mt={4}>
           <Text>
             This area was created as a place to store knowledge, and facilitate

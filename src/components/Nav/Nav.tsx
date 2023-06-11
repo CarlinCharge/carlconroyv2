@@ -18,6 +18,7 @@ const Nav = () => {
           color: "#A970FF",
           textDecoration: "underline",
         }}
+        display={{ base: " none", lg: "flex" }}
       >
         Carl Conroy
       </Link>
@@ -25,7 +26,7 @@ const Nav = () => {
       <Flex
         display="flex "
         direction={{ base: "column", md: "column", lg: "row" }}
-        flexFlow={{ base: "nowrap" }}
+        flexFlow={{ base: "column wrap" }}
       >
         {MenuItems.map((item) => {
           return (

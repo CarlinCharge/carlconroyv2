@@ -23,7 +23,7 @@ const AboutPage = () => {
           alt="CaAWL"
           width={{ base: "30rem" }}
           maxH="300px"
-          display={{ base: "none" }}
+          display={{ base: "none", lg: "block" }}
         ></Image>
       </Flex>
     </Container>
