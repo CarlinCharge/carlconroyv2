@@ -1,8 +1,8 @@
-import { Heading, Text, Box } from "@chakra-ui/react";
+import { Heading, Text, Box, Container } from "@chakra-ui/react";
 
 const GardenPostCard = () => {
   return (
-    <>
+    <Container maxW={{ base: "sm", md: "1xs", lg: "5xl" }}>
       <Box maxW="md" mt={4} border="solid" p={2}>
         <Heading fontSize="lg">The useState Hook Explained</Heading>
         <Text fontSize="md">An overview of useState</Text>
@@ -21,7 +21,7 @@ const GardenPostCard = () => {
         </Text>
         <Text>A Short Guide On Data Fetching</Text>
       </Box>
-    </>
+    </Container>
   );
 };
 export default GardenPostCard;
