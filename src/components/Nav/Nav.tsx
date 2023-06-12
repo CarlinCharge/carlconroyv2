@@ -16,7 +16,7 @@ const Nav = () => {
           color: "#A970FF",
           textDecoration: "underline",
         }}
-        display={{ base: "none", lg: "flex" }}
+        display={{ base: "flex", lg: "flex" }}
       >
         Carl Conroy
       </Link>
