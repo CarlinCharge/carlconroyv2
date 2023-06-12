@@ -1,17 +1,12 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
-import { IconButton } from "@chakra-ui/react";
+import { IconButton, Link, Flex } from "@chakra-ui/react";
 
 interface Props {
   isOpen: boolean;
   onToggle: () => void;
   display: any;
 }
-export default function BurgerNav({
-  isOpen,
-  onToggle,
-  display,
-  ...rest
-}: Props) {
+export default function BurgerNav({ isOpen, onToggle, display }: Props) {
   if (!isOpen) {
     return (
       <IconButton
@@ -19,7 +14,6 @@ export default function BurgerNav({
         aria-label="Open"
         onClick={onToggle}
         display={display}
-        {...rest}
         icon={<HamburgerIcon />}
       />
     );

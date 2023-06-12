@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link, Flex, useDisclosure } from "@chakra-ui/react";
+import { Link, Flex, useDisclosure, Collapse } from "@chakra-ui/react";
 import BurgerNav from "./BurgerNav";
 import { MenuItems } from "./MenuItems";
 
@@ -20,7 +20,6 @@ const Nav = () => {
       >
         Carl Conroy
       </Link>
-
       <Flex display="flex " flexFlow="no">
         {MenuItems.map((item) => {
           return (
@@ -47,6 +46,7 @@ const Nav = () => {
         display={{ base: "flex", lg: "none" }}
         isOpen={isOpen}
         onToggle={onToggle}
+        MenuItems={MenuItems}
       />
     </Flex>
   );
