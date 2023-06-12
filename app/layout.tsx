@@ -17,7 +17,7 @@ export default function RootLayout({
       <body>
         <ChakraProvider theme={theme}>
           <FontFaces />
-          <Container maxW={{ base: "5xl", md: "40px", lg: "6xl" }}>
+          <Container maxW={{ base: "5xl", md: "2xl", lg: "6xl" }}>
             <Nav />
             <StickySocials />
             {children}

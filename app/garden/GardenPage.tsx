@@ -3,7 +3,7 @@ import GardenPostCard from "./GardenPostCard";
 export default function GardenPage() {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
   return (
-    <Container maxW={{ base: "sm", md: "1xs", lg: "5xl" }}>
+    <Container maxW={{ base: "5xl", md: "5xl", lg: "5xl" }}>
       <Flex direction={{ base: "column", lg: "column" }}>
         <Heading fontSize={fontSize} display={{ base: "none", lg: "flex" }}>
           Welcome to the Garden

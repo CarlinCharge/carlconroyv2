@@ -1,13 +1,11 @@
 import NextLink from "next/link";
 import { Link, Flex, IconButton, useDisclosure } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import BurgerNav from "./BurgerNav";
 import { MenuItems } from "./MenuItems";
-import { useState } from "react";
 
 const Nav = () => {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
-  const [display, setDisplay] = useState("none");
-  const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onToggle } = useDisclosure();
   return (
     <Flex justifyContent="space-between" alignItems="center">
       <Link
@@ -18,7 +16,7 @@ const Nav = () => {
           color: "#A970FF",
           textDecoration: "underline",
         }}
-        display={{ base: " none", lg: "flex" }}
+        display={{ base: "none", lg: "flex" }}
       >
         Carl Conroy
       </Link>
@@ -28,6 +26,7 @@ const Nav = () => {
           return (
             <Link
               fontSize={fontSize}
+              display={{ base: "none", lg: "flex" }}
               maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
               as={NextLink}
               href={item.href}
@@ -44,6 +43,11 @@ const Nav = () => {
           );
         })}
       </Flex>
+      <BurgerNav
+        display={{ base: "flex", lg: "none" }}
+        isOpen={isOpen}
+        onToggle={onToggle}
+      />
     </Flex>
   );
 };
