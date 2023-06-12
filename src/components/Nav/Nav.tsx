@@ -1,5 +1,5 @@
 import NextLink from "next/link";
-import { Link, Flex, IconButton, useDisclosure } from "@chakra-ui/react";
+import { Link, Flex, useDisclosure } from "@chakra-ui/react";
 import BurgerNav from "./BurgerNav";
 import { MenuItems } from "./MenuItems";
 

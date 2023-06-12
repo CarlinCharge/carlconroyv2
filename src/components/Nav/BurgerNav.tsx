@@ -13,8 +13,25 @@ export default function BurgerNav({
   ...rest
 }: Props) {
   if (!isOpen) {
-    return <HamburgerIcon onClick={onToggle} display={display} {...rest} />;
+    return (
+      <IconButton
+        variant="primary"
+        aria-label="Open"
+        onClick={onToggle}
+        display={display}
+        {...rest}
+        icon={<HamburgerIcon />}
+      />
+    );
   } else {
-    return <CloseIcon onClick={onToggle} display={display} {...rest} />;
+    return (
+      <IconButton
+        variant="primary"
+        aria-label="Close"
+        onClick={onToggle}
+        display={display}
+        icon={<CloseIcon />}
+      />
+    );
   }
 }
