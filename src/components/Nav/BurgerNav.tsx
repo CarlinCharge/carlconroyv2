@@ -1,6 +1,5 @@
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import { IconButton } from "@chakra-ui/react";
-import { NavItems } from "./NavItems";
 
 interface Props {
   isOpen: boolean;

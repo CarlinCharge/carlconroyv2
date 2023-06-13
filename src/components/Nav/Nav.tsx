@@ -16,18 +16,27 @@ const Nav = () => {
           color: "#A970FF",
           textDecoration: "underline",
         }}
-        display={{ base: "flex", lg: "flex" }}
+        display="flex"
       >
         Carl Conroy
       </Link>
-      <Flex display="flex " flexFlow="no">
+      <Flex
+        className="Desktop Nav"
+        display={{ base: "none", lg: "flex" }}
+        flexDirection="row"
+      >
         <NavItems />
       </Flex>
-      <BurgerNav
-        isOpen={isOpen}
-        onToggle={onToggle}
-        display={{ base: "flex", lg: "none" }}
-      />
+      <Flex>
+        <Flex className="Mobile Nav" display={{ base: "flex", lg: "none" }}>
+          <NavItems />
+          <BurgerNav
+            isOpen={isOpen}
+            onToggle={onToggle}
+            display={{ base: "flex", lg: "none" }}
+          />
+        </Flex>
+      </Flex>
     </Flex>
   );
 };

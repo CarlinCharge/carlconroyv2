@@ -1,4 +1,4 @@
-import { Flex, Link } from "@chakra-ui/react";
+import { Flex, Link, useDisclosure } from "@chakra-ui/react";
 import NextLink from "next/link";
 import { MenuItems } from "./MenuItems";
 
@@ -6,12 +6,11 @@ export const NavItems = () => {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
 
   return (
-    <Flex justifyContent="space-between">
+    <Flex direction={{ base: "column", lg: "row" }}>
       {MenuItems.map((item) => {
         return (
           <Link
             fontSize={fontSize}
-            display={{ base: "none", lg: "flex" }}
             maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
             as={NextLink}
             href={item.href}
