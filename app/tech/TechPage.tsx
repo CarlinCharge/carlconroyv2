@@ -13,10 +13,11 @@ import NextLink from "next/link";
 import { TechItems } from "./TechItems";
 
 const Tech = () => {
+  const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
   return (
     <Flex direction="column">
       <Center>
-        <Heading>Every Day Tech</Heading>
+        <Heading fontSize={fontSize}>Every Day Tech</Heading>
       </Center>
       <Box mt="10" pl="20">
         <Heading size="md">What I Use To Work</Heading>

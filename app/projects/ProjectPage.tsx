@@ -1,15 +1,19 @@
 import ProjectPostCard from "../../src/components/Projects/ProjectPostCard";
-import { Heading, Flex, Box } from "@chakra-ui/react";
+import { Heading, Flex, Box, Container } from "@chakra-ui/react";
 
 export default function ProjectPage() {
+  const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
+
   return (
-    <>
-      <Heading textAlign="center">Projects</Heading>
+    <Container>
+      <Heading textAlign="center" fontSize={fontSize}>
+        Projects
+      </Heading>
       <Flex alignItems="center" pt="12" direction="column" textAlign="center">
         <Box>
           <ProjectPostCard />
         </Box>
       </Flex>
-    </>
+    </Container>
   );
 }

@@ -5,7 +5,7 @@ export default function GardenPage() {
   return (
     <Container maxW={{ base: "5xl", md: "5xl", lg: "5xl" }}>
       <Flex direction={{ base: "column", lg: "column" }}>
-        <Heading fontSize={fontSize} display={{ base: "none", lg: "flex" }}>
+        <Heading fontSize={fontSize} textAlign="center">
           Welcome to the Garden
         </Heading>
         <Box mt={4}>
@@ -17,9 +17,9 @@ export default function GardenPage() {
             always want to keep in my back pocket.
           </Text>
         </Box>
-        <Box>
+        <Container>
           <GardenPostCard />
-        </Box>
+        </Container>
       </Flex>
     </Container>
   );
