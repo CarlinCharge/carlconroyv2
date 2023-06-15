@@ -17,30 +17,32 @@ const computedFields = {
   },
 };
 
-export const Doc = defineDocumentType(() => ({
-  name: "Doc",
-  filePathPattern: `app\garden\mdx`,
-  contentType: "mdx",
-  fields: {
-    title: {
-      type: "string",
-      required: true,
-    },
-    description: {
-      type: "string",
-      required: true,
-    },
+export const Doc = defineDocumentType(() => {
+  return {
+    name: "Doc",
+    filePathPattern: `app\garden\mdx`,
+    contentType: "mdx",
+    fields: {
+      title: {
+        type: "string",
+        required: true,
+      },
+      description: {
+        type: "string",
+        required: true,
+      },
 
-    published: {
-      type: "boolean",
-      default: true,
+      published: {
+        type: "boolean",
+        default: true,
+      },
     },
-  },
-  computedFields,
-}));
+    computedFields,
+  };
+});
 
 export default makeSource({
-  contentDirPath: "src/content",
+  contentDirPath: "app/garden/mdx",
   documentTypes: [Doc],
   mdx: {
     remarkPlugins: [remarkGfm],
