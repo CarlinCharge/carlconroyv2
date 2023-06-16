@@ -1,5 +1,6 @@
 import { Container, Text, Heading, Flex, Box } from "@chakra-ui/react";
 import GardenPostCard from "./GardenPostCard";
+import Test from "./mdx/test.mdx";
 export default function GardenPage() {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
   return (
@@ -16,6 +17,7 @@ export default function GardenPage() {
             article, these entries exist to enforce programming principles I
             always want to keep in my back pocket.
           </Text>
+          <Test />
         </Box>
         <Container>
           <GardenPostCard />

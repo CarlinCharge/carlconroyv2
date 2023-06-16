@@ -1,4 +1,4 @@
-import { Heading, Text, Box, Container } from "@chakra-ui/react";
+import { Heading, Text, Box, Container, Code } from "@chakra-ui/react";
 
 const GardenPostCard = () => {
   return (
@@ -20,6 +20,13 @@ const GardenPostCard = () => {
           What Is Server Side Rendering? How Does getStaticProps Work?{" "}
         </Text>
         <Text>A Short Guide On Data Fetching</Text>
+      </Box>
+      <Box maxW="md" mt={4} border="solid" p={2}>
+        <Heading fontSize="lg">MDX in Next13</Heading>
+        <Text fontSize="md">What's New In Setting Up MDX Within Next13? </Text>
+        <Text>
+          A Quick And Dirty Guide On <Code colorScheme="black"> @next/mdx</Code>
+        </Text>
       </Box>
     </Container>
   );
