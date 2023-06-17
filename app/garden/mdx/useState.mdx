@@ -1,0 +1,46 @@
+---
+title: useState Explained
+slug:useStateExplained
+---
+
+As developers when building applications, we eventually run into the task of managing state.
+This can be as simple as tracking someone's score in a game, to submitting a form and even switching
+a website from dark mode to light mode using a toggle. Applications wouldn't be very interesting if they didn't have interactivitiy.
+
+In the context of React, our toolset is a group of lifecycle methods. At the time of writing, the two most commonly used lifecycle methods are
+useState and useEffect.
+
+import React, {useState} from 'react;
+
+export default function Counter (){
+
+const [count, setCount] = useState(0)
+
+function decrementCount() {
+setCount(prevCount =>
+prevCount - 1)
+}
+
+function incrementCount () {
+setCount (prevCount =>
+prevCount + 1)
+}
+
+    return (
+        <>
+        <button onClick={decrementCount}> - </button>
+        <span> {count} </span>
+         <button onClick={incrementCount}> + </button>
+        </>
+
+    )
+
+}
+
+TODO:
+
+1. Explain why you need to use function versions of setCount. Aka why can I not make my decrementCount
+   function just be setCount(count - 1)
+2. Maybe a short explanation of descructuring? It's used when importing useState and when creating our useState hook.
+3. Other gotchas with useState and how to avoid them.
+4. A different article on hooks?

@@ -15,7 +15,14 @@ export default function Bio() {
         </Text>
         <Text mb={4}>
           You can find some of my recent work in the{" "}
-          <Link href="/projects" fontWeight="bold">
+          <Link
+            href="/projects"
+            fontWeight="bold"
+            _hover={{
+              color: "#A970FF",
+              textDecoration: "underline",
+            }}
+          >
             Projects{" "}
           </Link>{" "}
           section of my portfolio including the details on how I built this
