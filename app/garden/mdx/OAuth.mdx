@@ -1,0 +1,39 @@
+OAuth stands for Open Authorization
+
+It allows 2 applications to communicate with one another through the use of tokens.
+For example, you can give Spotify permission to post things to your Facebook profile without giving them your username and password.
+This protects both sites - Facebook isn't responsible for holding your username and password for Spotify, and if they were to be hacked, they wouldn't get your Spotify credentials.
+
+Keep in mind, this is an **authorization** method, not an authentication method.
+
+Authorization is asking for permission to do things.
+
+Authentication is providing credentials (username and password) to prove you are the correct person.
+
+Spotify OAuth Flow
+
+Roles
+
+1. Resource Server - The API that holds information the application wants to access (Spotify API in this case).
+2. Resource Owner - The person owns the data in the resource server (Spotify User).
+3. Client - The application that wants to access your data (Spotify Stats).
+4. Authorization Server - Server that receives requests from the client for access tokens and issues them upon successful auth and consent by th resource owner.
+
+Scopes - specify exactly which resources should be available upon successful authorization.
+Only the information third party apps choose to be shared will be shared and nothing more.
+
+[Developer Scopes from Spotify API](https://developer.spotify.com/documentation/web-api/concepts/scopes)
+
+Tokens
+
+With every API request, an access token will be included in the HTTP request headers. If it isn't, the API won't know our app has been authorized by the user.
+It will reject our requests for any data.
+
+Before any client or server requests are made, OAuth requires a Client ID and a Client Secret to kick off OAuth flow.
+Once these are obtained, the OAuth Flow is as follows:
+
+1. Client requests authorization to access data using Client ID and Client Secret to auth server. Scopes can be included in this request.
+2. Auth server authorizes access to client. Verification of Client ID and Secret followed by checks that requested scopes are permitted.
+3. User grants app access to their data. This typically happens through a redirect to the account service of whatever app we are trying to interface with (Spotify account service in this case).
+4. Client receives access token from Spotify. Redirect back to original application.
+5. Client uses access token to request data from Spotify.
