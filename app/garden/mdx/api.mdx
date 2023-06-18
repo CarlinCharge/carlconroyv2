@@ -20,3 +20,23 @@ const element = document.querySelector('selected');
 
 The word DOM is thrown around a lot in development, but what's really happening here is that we are interacting with the Document Object Model API.
 The **document** object is our entry point for the DOM API and 'querySelector' is the method we are using.
+
+Browser API's
+
+Third Party API's
+[Web API Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/API)
+
+REST API's
+REST stands for Representational State Transfer
+
+What makes an API RESTful?
+
+1. Client-Server - API should be able to initiate a client to server interaction.
+   In web dev, this typically means the client (end user) should be able to send a response to the application server (website,service) and get a response.
+   These requests are generally handled via the HTTP protocol.
+
+2. Stateless - Requests should be independent of each other meaning more than one request of the same type can be made and they will always deliver the same response.
+3. Cacheable - API should make data cacheable to make interaction between server and client more streamlined.
+   4 Uniform interface - I need to research this more, not sure I quite understand it.
+4. Layered - clients don't need to know if it's commmunicating with higher or lower level code.
+5. Code-on-demand - API allows executable code to be sent to the client when requested from the server which extends client functionality.
