@@ -1,5 +1,5 @@
 import { Container, Text, Heading, Flex, Box } from "@chakra-ui/react";
-import GardenPostCard from "./GardenPostCard";
+import { GardenPostCards } from "./GardenPostCard";
 import Test from "./mdx/test.mdx";
 export default function GardenPage() {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
@@ -20,7 +20,7 @@ export default function GardenPage() {
           <Test />
         </Box>
         <Container>
-          <GardenPostCard />
+          <GardenPostCards />
         </Container>
       </Flex>
     </Container>

@@ -1,34 +1,34 @@
-import { Heading, Text, Box, Container, Code } from "@chakra-ui/react";
+import { Text, Container, Link, Flex } from "@chakra-ui/react";
+import NextLink from "next/link";
+import { GardenPosts } from "./GardenPosts";
 
-const GardenPostCard = () => {
+export const GardenPostCards = () => {
+  const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
+
   return (
-    <Container maxW={{ base: "sm", md: "1xs", lg: "5xl" }}>
-      <Box maxW="md" mt={4} border="solid" p={2}>
-        <Heading fontSize="lg">The useState Hook Explained</Heading>
-        <Text fontSize="md">An overview of useState</Text>
-        <Text>What Is It Used For And How Do I Use It?</Text>
-      </Box>
-
-      <Box maxW="md" mt={4} border="solid" p={2}>
-        <Heading fontSize="lg">The useEffect Hook Explained</Heading>
-        <Text fontSize="md">The Difference Between useEffect and useState</Text>
-        <Text>How Do They Work Together?</Text>
-      </Box>
-      <Box maxW="md" mt={4} border="solid" p={2}>
-        <Heading fontSize="lg">getStaticProps</Heading>
-        <Text fontSize="md">
-          What Is Server Side Rendering? How Does getStaticProps Work?{" "}
-        </Text>
-        <Text>A Short Guide On Data Fetching</Text>
-      </Box>
-      <Box maxW="md" mt={4} border="solid" p={2}>
-        <Heading fontSize="lg">MDX in Next13</Heading>
-        <Text fontSize="md">What's New In Setting Up MDX Within Next13? </Text>
-        <Text>
-          A Quick And Dirty Guide On <Code colorScheme="black"> @next/mdx</Code>
-        </Text>
-      </Box>
-    </Container>
+    <Flex direction={{ base: "column", lg: "column" }}>
+      {GardenPosts.map((item) => {
+        return (
+          <Container pt={4}>
+            <Link
+              fontSize={fontSize}
+              maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
+              as={NextLink}
+              href={item.href}
+              key={item.title}
+              pt="10px"
+              p="4"
+              _hover={{
+                color: "#A970FF",
+                textDecoration: "underline",
+              }}
+            >
+              {item.title}
+            </Link>
+            <Text>{item.description}</Text>
+          </Container>
+        );
+      })}
+    </Flex>
   );
 };
-export default GardenPostCard;
