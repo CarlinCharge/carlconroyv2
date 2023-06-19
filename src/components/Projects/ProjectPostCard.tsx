@@ -1,6 +1,6 @@
 import { Flex, Link, Container, Text } from "@chakra-ui/react";
 import NextLink from "next/link";
-import ProjectPosts from "./ProjectPosts";
+import { ProjectPosts } from "./ProjectPosts";
 
 export const ProjectItems = () => {
   const fontSize = { base: "10px", md: "15px", lg: "26.75px" };

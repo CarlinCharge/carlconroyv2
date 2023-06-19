@@ -4,7 +4,7 @@ interface ProjectPost {
   description: string;
 }
 
-const ProjectPost: ProjectPost[] = [
+export const ProjectPosts: ProjectPost[] = [
   {
     text: "Spotify Stats",
     href: "#",
@@ -16,5 +16,3 @@ const ProjectPost: ProjectPost[] = [
     description: "A Pokédex App For Looking Up Your Favorite Pokémon",
   },
 ];
-
-export default ProjectPost;
