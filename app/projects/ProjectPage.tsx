@@ -9,7 +9,7 @@ export default function ProjectPage() {
       <Heading textAlign="center" fontSize={fontSize}>
         Projects
       </Heading>
-      <Flex alignItems="center" pt="12" direction="column" textAlign="center">
+      <Flex alignItems="center" pt={4} direction="column" textAlign="center">
         <Box>
           <ProjectPostCard />
         </Box>
