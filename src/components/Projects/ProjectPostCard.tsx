@@ -1,14 +1,35 @@
-import { Heading, Text, Box } from "@chakra-ui/react";
+import { Flex, Link, Container, Text } from "@chakra-ui/react";
+import NextLink from "next/link";
+import ProjectPosts from "./ProjectPosts";
 
-const ProjectPostCard = () => {
+export const ProjectItems = () => {
+  const fontSize = { base: "10px", md: "15px", lg: "26.75px" };
+
   return (
-    <>
-      <Box maxW="md" mt={4} border="solid" p={2}>
-        <Heading fontSize="lg">Spotify Stats</Heading>
-        <Text fontSize="md">View Your Personalized Spotify Profile Data</Text>
-        <Text>React - Spotify API - ChakraUI - Vercel</Text>
-      </Box>
-    </>
+    <Flex direction={{ base: "column", lg: "row" }}>
+      {ProjectPosts.map((item) => {
+        return (
+          <Container>
+            <Link
+              fontSize={fontSize}
+              maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
+              as={NextLink}
+              href={item.href}
+              key={item.text}
+              mr="10px"
+              p="4"
+              _hover={{
+                color: "#A970FF",
+                textDecoration: "underline",
+              }}
+            >
+              {item.text}
+            </Link>
+            <Text>{item.description}</Text>
+          </Container>
+        );
+      })}
+    </Flex>
   );
 };
-export default ProjectPostCard;
+export default ProjectItems;
