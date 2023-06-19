@@ -7,12 +7,12 @@ interface ProjectPost {
 const ProjectPost: ProjectPost[] = [
   {
     text: "Spotify Stats",
-    href: "spotifystats",
+    href: "#",
     description: "View Your Personalized Spotify Data",
   },
   {
     text: "Pokédex App",
-    href: "/pokédex",
+    href: "#",
     description: "A Pokédex App For Looking Up Your Favorite Pokémon",
   },
 ];
