@@ -7,14 +7,14 @@ export const NavItems = () => {
 
   return (
     <Flex direction={{ base: "column", lg: "row" }}>
-      {MenuItems.map((item) => {
+      {MenuItems.map(({ href, text }) => {
         return (
           <Link
             fontSize={fontSize}
             maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
             as={NextLink}
-            href={item.href}
-            key={item.text}
+            href={href}
+            key={text}
             mr="10px"
             p="4"
             _hover={{
@@ -22,7 +22,7 @@ export const NavItems = () => {
               textDecoration: "underline",
             }}
           >
-            {item.text}
+            {text}
           </Link>
         );
       })}

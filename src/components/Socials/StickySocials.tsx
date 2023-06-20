@@ -12,16 +12,16 @@ export const StickySocials = () => {
       display={{ base: "block", lg: "grid" }}
       className="socials"
     >
-      {SocialItems.map((item) => {
+      {SocialItems.map(({ href, icon }) => {
         return (
-          <ListItem key={item.href}>
+          <ListItem key={href}>
             <Link
-              href={item.href}
+              href={href}
               _hover={{
                 color: "#A970FF",
               }}
             >
-              <Icon as={item.icon} w={size} h={size} />
+              <Icon as={icon} w={size} h={size} />
             </Link>
           </ListItem>
         );

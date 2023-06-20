@@ -7,15 +7,15 @@ export const GardenPostCards = () => {
 
   return (
     <Flex direction={{ base: "column", lg: "column" }}>
-      {GardenPosts.map((item) => {
+      {GardenPosts.map(({ href, title, description }) => {
         return (
           <Container pt={4}>
             <Link
               fontSize={fontSize}
               maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
               as={NextLink}
-              href={item.href}
-              key={item.title}
+              href={href}
+              key={title}
               pt="10px"
               p="4"
               _hover={{
@@ -23,9 +23,9 @@ export const GardenPostCards = () => {
                 textDecoration: "underline",
               }}
             >
-              {item.title}
+              {title}
             </Link>
-            <Text>{item.description}</Text>
+            <Text>{description}</Text>
           </Container>
         );
       })}

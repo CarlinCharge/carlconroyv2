@@ -7,15 +7,15 @@ export const ProjectItems = () => {
 
   return (
     <Flex direction={{ base: "column", lg: "row" }}>
-      {ProjectPosts.map((item) => {
+      {ProjectPosts.map(({ href, text, description }) => {
         return (
           <Container>
             <Link
               fontSize={fontSize}
               maxW={{ base: "2xs", md: "2xs", lg: "6xl" }}
               as={NextLink}
-              href={item.href}
-              key={item.text}
+              href={href}
+              key={text}
               mr="10px"
               p="4"
               _hover={{
@@ -23,9 +23,9 @@ export const ProjectItems = () => {
                 textDecoration: "underline",
               }}
             >
-              {item.text}
+              {text}
             </Link>
-            <Text>{item.description}</Text>
+            <Text>{description}</Text>
           </Container>
         );
       })}
